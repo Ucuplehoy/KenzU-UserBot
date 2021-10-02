@@ -8,19 +8,19 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/370543177a86d96f25f72.jpg">
+  <img src="https://telegra.ph/file/07a83ff07cec5e3d542e0.jpg">
 </p>
 
 ## <p align="center">DEPLOY TO HEROKU</p>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Askarbot/Skyzuu-Userbot">
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kenzuuu/KenzU-UserBot">
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 
 
 ## Group Support:
 
-   <a href="https://t.me/Skyzuproject"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/inibotsaya"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
 
 ## String Session :
 
