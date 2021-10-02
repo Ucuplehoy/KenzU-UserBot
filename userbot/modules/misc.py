@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("**Mematikan Skyzu-Userbot....**")
+    await event.edit("**Mematikan Kenzu-Userbot....**")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,7 +70,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("**Restarting Skyzu-Userbot...**")
+    await event.edit("**Restarting Kenzu-Userbot...**")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ Skyzu-UserBot Repo](https://github.com/Askarbot/Skyzuu-Userbot/blob/Skyzuu-UserBot/README.md)"
+        "\n[💀 KenzU-UserBot Repo](https://github.com/Kenzuuu/KenzU-Userbot/blob/KenzU-UserBot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,11 +110,11 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "⚡Sƙყȥυ-υʂҽɾႦσƚ⚡ \n"
-        "✰ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Github](https://github.com/Askarbot/Skyzuu-Userbot)\n"
-        "✰ **ᴏᴡɴᴇʀ ʙᴏᴛ :** [Skyzu](t.me/skyzuuuu)\n"
-        "✰ **ᴄʜᴀɴɴᴇʟ :** [Channel](t.me/Skyzuproject)\n"
-        "✰ **ʟɪᴄᴇɴsᴇ :** [GPL-3.0 License](https://github.com/Askarbot/Skyzuu-Userbot/blob/Skyzuu-Userbot/LICENSE)"
+        "💀KenzU-UserBot \n"
+        "✰ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Github](https://github.com/Kenzuuu/KenzU-UserBot)\n"
+        "✰ **ᴏᴡɴᴇʀ ʙᴏᴛ :** [KenzU](t.me/triplenineee)\n"
+        "✰ **ᴄʜᴀɴɴᴇʟ :** [Channel](t.me/inibotsaya)\n"
+        "✰ **ʟɪᴄᴇɴsᴇ :** [GPL-3.0 License](https://github.com/Kenzuuu/KenzU-UserBot/blob/KenzU-UserBot/LICENSE)"
 
     )
 
