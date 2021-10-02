@@ -1,7 +1,7 @@
 # Using Python Slim-Buster
 FROM vckyouuu/geezprojects:buster
 #━━━━━ Userbot Telegram ━━━━━
-#━━━━━ By Skyzuu-Userbot ━━━━━
+#━━━━━ By KenzU-Userbot ━━━━━
 
 RUN git clone -b Skyzuu-Userbot https://github.com/Kenzuuu/KenzU-UserBot /root/userbot
 RUN mkdir /root/userbot/.bin
