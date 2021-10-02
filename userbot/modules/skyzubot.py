@@ -36,7 +36,7 @@ async def typewriter(typew):
     await typew.edit("**kek GJB!☑️**")
     await typew.edit("**kek GJB!✅**")
     sleep(3)
-    await typew.edit("**CUMA SYZU YANG BAIK HATI DAN TIDAK SOMBONG✨**")
+    await typew.edit("**CUMA KENZU YANG BAIK HATI DAN TIDAK SOMBONG✨**")
 
 
 @register(outgoing=True, pattern='^.lahk(?: |$)(.*)')
@@ -69,7 +69,7 @@ async def typewriter(typew):
     await typew.edit("`Dah sana cabut, Makasih hiburannya, Udah bikin Gua tawa ngakak`")
 
 CMD_HELP.update({
-    "skyzubot":
+    "kenzubot":
     "`.stres`\
     \nUsage: menampilkan alive bot.\
     \n\n`.sadboy`\
