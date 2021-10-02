@@ -913,7 +913,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "KENZU",
-                                "https://github.com/Askarbot/Skyzuy-Userbot"),
+                                "https://github.com/Kenzuuu/KenzU-UserBot"),
 
                             custom.Button.url(
                                 "CHANNEL",
