@@ -165,7 +165,7 @@ async def bot_ver(event):
 
         await event.edit(
             "**⚜-**💥KENZU-USERBOT💥 Versi:** \n "
-            f"heads/KenzU-UserBot-0-x634i7u1"
+            f"heads/Skyzu-userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -259,7 +259,7 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:kenzuon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:skyzuon)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
