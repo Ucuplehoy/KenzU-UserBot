@@ -474,7 +474,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("【﻿Ｃｈａｎｎｅｌ】",
-                                       "https://t.me/Skyzuproject")],
+                                       "https://t.me/inibotsaya")],
                     ]
                 )
 
@@ -485,7 +485,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @skyzuuuu\n\n",
+                    f"{START_WELCOME}\n\n**Powered By** : @triplenineee\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -518,7 +518,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"⚡Sƙყȥυ-υʂҽɾႦσƚ⚡\n\n**🇲 🇦 🇮 🇳  🇲 🇪 🇳 🇺**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
+                text = f"💥KenzU-UserBot💥\n\n**🇲 🇦 🇮 🇳  🇲 🇪 🇳 🇺**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
                 await event.edit(text,
                                  file=roselogo,
                                  buttons=buttons,
@@ -550,10 +550,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Saya Adalah Skyzu Userbot Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"❁ __Saya Adalah Kenzu Userbot Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 180 Modules__.\n\n"
-                    f"© @Skyzuproject")
+                    f"© @inibotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -563,7 +563,7 @@ with bot:
                     ]
                 )
             else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Kyy-Userbot"
+                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Kenzu-Userbot"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -631,7 +631,7 @@ with bot:
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
                     f"× `.set var SKYZU_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command skyzuAlive__.\n\n"
-                    f"© @Skyzuproject")
+                    f"© @ininotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -661,7 +661,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© @Skyzuproject")
+                    f"© @inibotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -691,7 +691,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© @Skyzuproject")
+                    f"© @inibotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -719,7 +719,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @Skyzuproject")
+                    f"© @inibotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -745,11 +745,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk Skyzuu-Userbot, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk Kenzu-Userbot, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @Skyzuproject")
+                    f"© @inibotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -814,7 +814,7 @@ with bot:
                     f"**|**  [`{percentage}`**%**]\n"
                     f" ✠➲ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
-                    f"© @Skyzuproject")
+                    f"© @inibotsaya")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -837,7 +837,7 @@ with bot:
         async def killdabot(event):
             if event.query.user_id == uid:
                 text = (
-                    f"**Restaring Skyzuu-Userbot**...")
+                    f"**Restaring Kenzu-Userbot**...")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -865,7 +865,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/Skyzuproject")],
+                                       "t.me/inibotsaya")],
                     ]
                 )
 
@@ -880,33 +880,33 @@ with bot:
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"⚡Sƙყȥυ-υʂҽɾႦσƚ⚡\n\n**🇲​🇦​🇮​🇳​ 🇲​🇪​🇳​🇺​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
+                    text=f"💥KenzU-UserBot\n\n**🇲​🇦​🇮​🇳​ 🇲​🇪​🇳​🇺​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡Sƙყȥυ-υʂҽɾႦσƚ⚡",
+                    "Bantuan Dari 💥Kenzu-UserBot💥",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡Sƙყȥυ-υʂҽɾႦσƚ⚡",
-                    text="""°SKYZU-USERBOT°""",
+                    " 💥KenzU-UserBot💥",
+                    text="""°KENZU-USERBOT°""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "SKYZU",
-                                "https://github.com/Askarbot/Skyzuy-Userbot"),
+                                "KENZU",
+                                "https://github.com/Kenzuuu/KenzU-UserBot"),
 
                             custom.Button.url(
                                 "CHANNEL",
-                                "t.me/Skyzuproject")],
+                                "t.me/inibotsaya")],
                         [custom.Button.url(
                             "LICENSE",
-                            "https://github.com/Askarbot/Skyzuu-Userbot/LICENSE")],
+                            "https://github.com/Kenzuuu/KenzU-UserBot/LICENSE")],
                     ],
                     link_preview=False,
                 )
