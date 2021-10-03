@@ -164,8 +164,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Sƙყȥυ-υʂҽɾႦσƚ⚡ Versi:** \n "
-            f"heads/Skyzu-Userbot-0-x634i7u1"
+            "**⚜-**💥KENZU-USERBOT💥 Versi:** \n "
+            f"heads/KenzU-UserBot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -238,7 +238,7 @@ async def amireallyalive(alive):
         f"➥ **Bot Ver**  : `{BOT_VER}` \n"
         f"➥ **Modules**  : `{len(modules)}` \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/GroupVirtualMusic) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Askarbot/Skyzuu-Userbot)")
+        f"[ɢʀᴏᴜᴘꜱ](https://t.me/randommpeopleee) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kenzuuu/KenzU-UserNot)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -259,13 +259,13 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:skyzuon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:kenzuon)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f"●▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬● \n"
-        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[Sƙȥυ](t.me/skyzuuuu)             ㅤ \n"
+        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[Kenzu](t.me/triplenineee)             ㅤ \n"
         f"✾ 🖥️ • `ꜱʏꜱᴛᴇᴍ. :`Ubuntu 20.10            \n"
         f"✾ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ :`v.{version.__version__}                ㅤㅤ  \n"
         f"✾ 🐍 • `ᴘʏᴛʜᴏɴ. :`v.{python_version()} ㅤㅤ\n"
@@ -303,7 +303,7 @@ async def redis(alive):
     await alive.edit("__Sedang Memuat...__")
     await alive.edit("__Sedang Memuat..__")
     await alive.edit("__Sedang Memuat...__")
-    await alive.edit("⚡")
+    await alive.edit("💫")
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━━━━✠╮\n"
@@ -314,10 +314,10 @@ async def redis(alive):
         f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✧ **Bot Ver  :** {BOT_VER} \n"
         f"┃✧ **Modules  :** {len(modules)} Modules \n"
-        f"┃✧ **GitHub   :** [Sƙȥυ](https://github.com/Askarbot/Skyzuu-Userbot) \n"
-        f"┃✧ **Groups   :** [groups](https://t.me/GroupVirtualMusic) \n"
-        f"┃✧ **Owner    :** [Skyzu](https://t.me/skyzuuuu) \n"
-        f"┃✧ **channel  :** [channel](https://t.me/Skyzuproject) \n"
+        f"┃✧ **GitHub   :** [KenzU](https://github.com/Kenzuuu/KenzU-UserBot) \n"
+        f"┃✧ **Groups   :** [groups](https://t.me/randommpeopleee) \n"
+        f"┃✧ **Owner    :** [KenzU](https://t.me/triplenine) \n"
+        f"┃✧ **channel  :** [channel](https://t.me/inibotsaya) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━━━━✠╯")
     if ALIVE_LOGO:
         try:
