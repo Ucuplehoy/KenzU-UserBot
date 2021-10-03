@@ -316,7 +316,7 @@ async def redis(alive):
         f"┃✧ **Modules  :** {len(modules)} Modules \n"
         f"┃✧ **GitHub   :** [KenzU](https://github.com/Kenzuuu/KenzU-UserBot) \n"
         f"┃✧ **Groups   :** [groups](https://t.me/randommpeopleee) \n"
-        f"┃✧ **Owner    :** [KenzU](https://t.me/triplenine) \n"
+        f"┃✧ **Owner    :** [KenzU](https://t.me/triplenineee) \n"
         f"┃✧ **channel  :** [channel](https://t.me/inibotsaya) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━━━━✠╯")
     if ALIVE_LOGO:
@@ -551,7 +551,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Sƙყȥυ-υʂҽɾႦσƚ⚡ Versi:** \n "
+            "**⚜-**💥KenzU-UserBot💥 Versi:** \n "
             f"heads/Skyzu-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
@@ -701,10 +701,10 @@ async def redis(alive):
         f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✧ **Bot Ver  :** {BOT_VER} \n"
         f"┃✧ **Modules  :** {len(modules)} Modules \n"
-        f"┃✧ **GitHub   :** [Sƙȥυ](https://github.com/Askarbot/Skyzuu-Userbot) \n"
-        f"┃✧ **Groups   :** [groups](https://t.me/GroupVirtualMusic) \n"
-        f"┃✧ **Owner    :** [Skyzu](https://t.me/skyzuuuu) \n"
-        f"┃✧ **channel  :** [channel](https://t.me/Skyzuproject) \n"
+        f"┃✧ **GitHub   :** [Kenzu](https://github.com/Kenzuuu/KenzU-UserBot) \n"
+        f"┃✧ **Groups   :** [groups](https://t.me/randommpeopleee) \n"
+        f"┃✧ **Owner    :** [EnzU](https://t.me/triplenineee) \n"
+        f"┃✧ **channel  :** [channel](https://t.me/inibotsaya) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━━━━✠╯")
     if ALIVE_LOGO:
         try:
