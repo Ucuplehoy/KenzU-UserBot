@@ -365,7 +365,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, FOTO_LOG, caption=f"**💀KENZU-USERBOT💀 Telah Aktif yah Tot !")
+    await bot.send_file(BOTLOG_CHATID, caption=f"💥KENZU-USERBOT💥 Telah berhasil diaktifkan !")
     return
 
 with bot:
@@ -532,7 +532,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"💀KenzU-UserBot💀\n\n**🇲 🇦 🇮 🇳  🇲 🇪 🇳 🇺**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
+                text = f"💥KENZU-USERBOT💥\n\n**🇲 🇦 🇮 🇳  🇲 🇪 🇳 🇺**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
                 await event.edit(text,
                                  file=roselogo,
                                  buttons=buttons,
@@ -894,20 +894,20 @@ with bot:
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"💀KenzU-Userbot💀\n\n**🇲​🇦​🇮​🇳​ 🇲​🇪​🇳​🇺​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
+                    text=f"💥KENZU-USERBOT💥\n\n**🇲​🇦​🇮​🇳​ 🇲​🇪​🇳​🇺​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 💀Kenzu-UserBot💀",
+                    "Bantuan Dari 💥Kenzu-UserBot💥",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 💀KenzU-UserBot💀",
+                    " 💥KenzU-UserBot💥",
                     text="""°KENZU-USERBOT°""",
                     buttons=[
                         [
