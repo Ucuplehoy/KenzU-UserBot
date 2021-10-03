@@ -148,8 +148,6 @@ async def redis(pong):
     await asyncio.sleep(1)
     await pong.edit("💫")
     await asyncio.sleep(2)
-    await pong.edit("💫")
-    await asyncio.sleep(2)
     await pong.edit("**Dorrr...!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
