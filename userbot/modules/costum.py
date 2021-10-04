@@ -49,7 +49,7 @@ async def on_snip(event):
 
 @register(outgoing=True, pattern=r"^\.costum (\w*)")
 async def on_snip_save(event):
-    """For .costum command, saves costums for future use."""
+    """For .costum command, saves costums for future use?"""
     try:
         from userbot.modules.sql_helper.snips_sql import add_snip
     except AtrributeError:
