@@ -41,7 +41,7 @@ CUSTOM_TEXT = str(
     PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat Skyzu-Userbot {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
 DEF_UNAPPROVED_MSG = (
     "╔═════════════════════╗\n"
-    ".   ⚠️  𝙽𝚘 𝚂𝚙𝚊𝚖 𝙷𝚎𝚛𝚎  ⚠️  ”\n"
+    "     ⚠️    𝙽𝚘 𝚂𝚙𝚊𝚖 𝙷𝚎𝚛𝚎    ⚠️  \n"
     "╚═════════════════════╝")
 # =================================================================
 
