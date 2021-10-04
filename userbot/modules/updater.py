@@ -188,7 +188,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n💥KENZU-UBOT💥 Sudah Versi Terbaru || Tunggu Update Terbaru\n')
+            f'\n💥KENZU-UBOT💥 𝚈𝚘𝚞 𝚊𝚛𝚎 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚞𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚕𝚊𝚝𝚎𝚜𝚝 𝚟𝚎𝚛𝚜𝚒𝚘𝚗💥\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
