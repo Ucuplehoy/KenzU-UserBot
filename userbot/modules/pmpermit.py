@@ -274,7 +274,7 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `𝚈𝚘𝚞𝚛 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚠𝚊𝚜 𝚛𝚎𝚓𝚎𝚌𝚝𝚎𝚍 𝚙𝚕𝚎𝚊𝚜𝚎 𝚍𝚘𝚗'𝚝 𝚜𝚙𝚊𝚖!`"
+        f"`𝚂𝚘𝚛𝚛𝚢` [{name0}](tg://user?id={disapprvpm.chat_id}) `𝚈𝚘𝚞𝚛 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚠𝚊𝚜 𝚛𝚎𝚓𝚎𝚌𝚝𝚎𝚍 𝚙𝚕𝚎𝚊𝚜𝚎 𝚍𝚘𝚗'𝚝 𝚜𝚙𝚊𝚖!`"
     )
 
     if BOTLOG:
