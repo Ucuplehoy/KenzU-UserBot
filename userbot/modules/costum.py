@@ -14,7 +14,7 @@ from userbot.events import register
 
 
 @register(outgoing=True,
-          pattern=r"\.\w*",
+          pattern=r"\?\w*",
           ignore_unsafe=True,
           disable_errors=True)
 async def on_snip(event):
