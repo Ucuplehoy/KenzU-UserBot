@@ -41,7 +41,7 @@ CUSTOM_TEXT = str(
     PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat Skyzu-Userbot {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
 DEF_UNAPPROVED_MSG = (
     "╔═════════════════════╗\n"
-    "     ⚠️    𝙽𝚘 𝚂𝚙𝚊𝚖 𝙷𝚎𝚛𝚎    ⚠️  \n"
+    "     ⚠️      𝙽𝚘 𝚂𝚙𝚊𝚖 𝙷𝚎𝚛𝚎      ⚠️  \n"
     "╚═════════════════════╝")
 # =================================================================
 
@@ -242,7 +242,7 @@ async def approvepm(apprvpm):
     except IntegrityError:
         return await apprvpm.edit("`Oke Pesan Anda Sudah Diterima ツ`")
 
-    await apprvpm.edit(f"`Hai` [{name0}](tg://user?id={uid}) `Pesan Anda Sudah Diterima ya entot`")
+    await apprvpm.edit(f"`Hai` [{name0}](tg://user?id={uid}) `𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚛𝚎𝚌𝚎𝚒𝚟𝚎𝚍 𝚖𝚎𝚜𝚜𝚊𝚐𝚎`")
     await apprvpm.delete(getmsg)
     await message.delete()
 
@@ -272,7 +272,7 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!`"
+        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `𝚈𝚘𝚞𝚛 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚠𝚊𝚜 𝚛𝚎𝚓𝚎𝚌𝚝𝚎𝚍 𝚙𝚕𝚎𝚊𝚜𝚎 𝚍𝚘𝚗'𝚝 𝚜𝚙𝚊𝚖!`"
     )
 
     if BOTLOG:
@@ -292,12 +292,12 @@ async def blockpm(block):
         aname = replied_user.id
         name0 = str(replied_user.first_name)
         await block.client(BlockRequest(aname))
-        await block.edit(f"`Anda Telah Diblokir Oleh {DEFAULTUSER}`")
+        await block.edit(f"`𝚈𝚘𝚞 𝚑𝚊𝚟𝚎 𝚋𝚎𝚎𝚗 𝚋𝚕𝚘𝚌𝚔𝚎𝚍 𝚋𝚢 {DEFAULTUSER}`")
         uid = replied_user.id
     else:
         await block.client(BlockRequest(block.chat_id))
         aname = await block.client.get_entity(block.chat_id)
-        await block.edit(f"`LU JAMET, MAAF GUA BLOCK YA KONTOLL`")
+        await block.edit(f"`𝚝𝚑𝚎 𝚙𝚛𝚘𝚌𝚎𝚜𝚜 𝚘𝚏 𝚎𝚗𝚝𝚎𝚛𝚒𝚗𝚐 𝚝𝚑𝚎 𝚞𝚜𝚎𝚛 𝚒𝚗𝚝𝚘 𝚝𝚑𝚎 𝚋𝚕𝚘𝚌𝚔 𝚕𝚒𝚜𝚝 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕`")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
@@ -323,12 +323,12 @@ async def unblockpm(unblock):
         replied_user = await unblock.client.get_entity(reply.from_id)
         name0 = str(replied_user.first_name)
         await unblock.client(UnblockRequest(replied_user.id))
-        await unblock.edit("`UDAH DI UNBLOCK NIH, JANGAN NGEJAMET LAGI YA NGENTOT!!`")
+        await unblock.edit("`𝚃𝚑𝚎 𝚞𝚗𝚋𝚕𝚘𝚌𝚔 𝚙𝚛𝚘𝚌𝚎𝚜𝚜 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚌𝚊𝚛𝚛𝚒𝚎𝚍 𝚘𝚞𝚝, 𝚙𝚕𝚎𝚊𝚜𝚎 𝚍𝚘𝚗'𝚝 𝚜𝚙𝚊𝚖 𝚊𝚗𝚢𝚖𝚘𝚛𝚎`")
 
     if BOTLOG:
         await unblock.client.send_message(
             BOTLOG_CHATID,
-            f"[{name0}](tg://user?id={replied_user.id})" " Tidak Lagi Diblokir.",
+            f"[{name0}](tg://user?id={replied_user.id})" " 𝚒𝚜 𝚗𝚘 𝚕𝚘𝚗𝚐𝚎𝚛 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚋𝚕𝚘𝚌𝚔 𝚕𝚒𝚜𝚝.",
         )
 
 
@@ -336,7 +336,7 @@ async def unblockpm(unblock):
 async def add_pmsg(cust_msg):
     """Set your own Unapproved message"""
     if not PM_AUTO_BAN:
-        return await cust_msg.edit("**Anda Harus Menyetel** `PM_AUTO_BAN` **Ke** `True` Atau Ketik `.set var PM_AUTO_BAN True`")
+        return await cust_msg.edit("**𝙿𝚕𝚎𝚊𝚜𝚎 𝚜𝚎𝚝** `PM_AUTO_BAN` **Ke** `True` Atau Ketik `.set var PM_AUTO_BAN True`")
     try:
         import userbot.modules.sql_helper.globals as sql
     except AttributeError:
@@ -364,26 +364,26 @@ async def add_pmsg(cust_msg):
             msg = message.message  # get the plain text
             sql.addgvar("unapproved_msg", msg)
         else:
-            return await cust_msg.edit("`Mohon Balas Ke Pesan`")
+            return await cust_msg.edit("`𝚙𝚕𝚎𝚊𝚜𝚎 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚖𝚎𝚜𝚜𝚊𝚐𝚎`")
 
-        await cust_msg.edit("`Pesan Berhasil Disimpan Ke Room Chat`")
+        await cust_msg.edit("`𝚠𝚊𝚛𝚗𝚒𝚗𝚐 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚜𝚊𝚟𝚎𝚍 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢`")
 
         if BOTLOG:
             await cust_msg.client.send_message(
-                BOTLOG_CHATID, f"**{status} PM Yang Tersimpan Dalam Room Chat Anda:** \n\n{msg}"
+                BOTLOG_CHATID, f"**{status} 𝙿𝙼 𝚜𝚊𝚟𝚎𝚍 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚖𝚎𝚜𝚜𝚊𝚐𝚎:** \n\n{msg}"
             )
 
     if conf.lower() == "reset":
         if custom_message is not None:
             sql.delgvar("unapproved_msg")
-            await cust_msg.edit("`Anda Telah Menghapus Pesan Custom PM Ke Default`")
+            await cust_msg.edit("`𝙿𝙼 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚛𝚎𝚜𝚎𝚝 𝚑𝚊𝚜 𝚋𝚎𝚎𝚗 𝚍𝚘𝚗𝚎 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢`")
         else:
-            await cust_msg.edit("`Pesan PM Anda Sudah Default Sejak Awal`")
+            await cust_msg.edit("`𝙿𝙼 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚑𝚊𝚜 𝚗𝚘𝚝 𝚋𝚎𝚎𝚗 𝚜𝚎𝚝, 𝚢𝚘𝚞 𝚊𝚛𝚎 𝚞𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚍𝚎𝚏𝚊𝚞𝚕𝚝 𝚖𝚎𝚜𝚜𝚊𝚐𝚎`")
 
     if conf.lower() == "get":
         if custom_message is not None:
             await cust_msg.edit(
-                "**Ini Adalah Pesan PM Yang Sekarang Dikirimkan Ke Room Chat Anda:**" f"\n\n{custom_message}"
+                "**𝚝𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚠𝚊𝚛𝚗𝚒𝚗𝚐 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚌𝚑𝚊𝚝 𝚛𝚘𝚘𝚖:**" f"\n\n{custom_message}"
             )
         else:
             await cust_msg.edit(
