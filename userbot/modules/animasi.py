@@ -85,6 +85,16 @@ async def typewriter(typew):
                      "\n╭╯╰╯┃╰╯┃╰╯┃╰╯┃╰╮"
                      "\n╰━━━┻━━┻━━┻━━┻━╯")
 
+@register(outgoing=True, pattern='^.hapus(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(2)
+    await typew.edit("`Starting service . . . `")
+    sleep(2)
+    await typew.edit("`Waiting respons . . .`")
+    sleep(1)
+    await typew.edit(.del)
+    
 
 CMD_HELP.update({
     "animasi2":
@@ -94,6 +104,6 @@ CMD_HELP.update({
     \n↳ : Coba aja hehehe.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.idiot`\
     \n↳ : u're ediot xixixi.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `kosong`\
-    \n↳ : Tunggu update selanjutnya kawan."
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hapus`\
+    \n↳ : `Menghapus pesan`."
 })
