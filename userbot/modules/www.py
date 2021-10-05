@@ -145,18 +145,32 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 . . .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 . . .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 . . .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 . . .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 .**")
+    await pong.edit("**𝚆𝚊𝚒𝚝𝚒𝚗𝚐 . . .**")
     await asyncio.sleep(1)
     await pong.edit("💥")
     await asyncio.sleep(2)
-    await pong.edit("**Dorrr...!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**PONG!!💥**\n"
-                    f"➥ **ᴘɪɴɢ:** "
+                    f"**★ 𝙿𝚒𝚗𝚐:** "
                     f"`%sms` \n"
-                    f"➥ **ᴜᴘᴛɪᴍᴇ:** "
+                    f"**★ 𝚄𝚙𝚝𝚒𝚖𝚎:** "
                     f"`{uptime}` \n"
-                    f"**➳ ᴍʏ ɴᴀᴍᴇ:** `{ALIVE_NAME}`" % (duration))
+                    f"**★ 𝙼𝚢 𝙽𝚊𝚖𝚎:** `{ALIVE_NAME}`" % (duration))
 
 
 @register(outgoing=True, pattern="^.kecepatan$")
