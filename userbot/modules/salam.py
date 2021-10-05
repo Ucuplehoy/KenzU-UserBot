@@ -120,11 +120,6 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GA KEREN LU BEGITU NGENTOT!**")
 
-@register(outgoing=True, pattern='^DEL(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit("𝙿𝚎𝚛𝚒𝚗𝚝𝚊𝚑 𝚍𝚒𝚓𝚊𝚕𝚊𝚗𝚔𝚊𝚗 . . .")
-    await typew.edit(.del)
 
 CMD_HELP.update({
     "salam":
