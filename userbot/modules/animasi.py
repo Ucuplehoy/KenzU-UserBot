@@ -92,8 +92,6 @@ async def typewriter(typew):
     await typew.edit("`Starting service . . . `")
     sleep(2)
     await typew.edit("`Waiting respons . . .`")
-    sleep(1)
-    await typew.edit(?hapus)
     
 
 CMD_HELP.update({
@@ -104,6 +102,6 @@ CMD_HELP.update({
     \n↳ : Coba aja hehehe.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.idiot`\
     \n↳ : u're ediot xixixi.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hapus`\
-    \n↳ : `Menghapus pesan`."
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `kosong`\
+    \n↳ : `belum ada update`."
 })
