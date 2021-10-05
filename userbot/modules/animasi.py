@@ -93,7 +93,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`Waiting respons . . .`")
     sleep(1)
-    await typew.edit(.del)
+    await typew.edit(?hapus)
     
 
 CMD_HELP.update({
