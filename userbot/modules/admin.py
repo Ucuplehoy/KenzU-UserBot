@@ -113,7 +113,7 @@ async def set_group_photo(gpic):
             await gpic.edit(PP_ERROR)
 
 
-@register(outgoing=True, pattern=r"^\_promote(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.promote(?: |$)(.*)")
 async def promote(promt):
     # Get targeted chat
     chat = await promt.get_chat()
