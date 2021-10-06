@@ -36,8 +36,8 @@ from userbot.events import register
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`Gambar Terlalu Kecil`"
 PP_ERROR = "`Gagal Memproses Gambar`"
-NO_ADMIN = "`Maaf Anda Bukan Admin:)`"
-NO_PERM = "`Maaf Anda Tidak Mempunyai Izin!`"
+NO_ADMIN = "`𝘈𝘵𝘵𝘦𝘯𝘵𝘪𝘰𝘯 𝘢𝘥𝘮𝘪𝘯 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘪𝘴 𝘳𝘦𝘲𝘶𝘪𝘳𝘦𝘥:)`"
+NO_PERM = "`𝘈𝘵𝘵𝘦𝘯𝘵𝘪𝘰𝘯 𝘢𝘥𝘮𝘪𝘯 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘪𝘴 𝘳𝘦𝘲𝘶𝘪𝘳𝘦𝘥`"
 NO_SQL = "`Berjalan Pada Mode Non-SQL`"
 
 CHAT_PP_CHANGED = "`Berhasil Mengubah Profil Grup`"
@@ -113,7 +113,7 @@ async def set_group_photo(gpic):
             await gpic.edit(PP_ERROR)
 
 
-@register(outgoing=True, pattern=r"^\.promote(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\_promote(?: |$)(.*)")
 async def promote(promt):
     # Get targeted chat
     chat = await promt.get_chat()
@@ -134,9 +134,6 @@ async def promote(promt):
         pin_messages=True,
     )
 
-    await promt.edit("`𝘈𝘥𝘮𝘪𝘯 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘱𝘳𝘰𝘤𝘦𝘴𝘴. . .`")
-    await promt.edit("`𝘈𝘥𝘮𝘪𝘯 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘱𝘳𝘰𝘤𝘦𝘴𝘴. . .`")
-    await promt.edit("`𝘈𝘥𝘮𝘪𝘯 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘱𝘳𝘰𝘤𝘦𝘴𝘴. . .`")
     await promt.edit("`𝘈𝘥𝘮𝘪𝘯 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘱𝘳𝘰𝘤𝘦𝘴𝘴. . .`")
     user, rank = await get_user_from_event(promt)
     if not rank:
