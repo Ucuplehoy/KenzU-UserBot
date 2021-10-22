@@ -157,13 +157,11 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**PONG!!💥**\n"
-                    "═════════════════════\n"
                     f"**★ 𝙿𝚒𝚗𝚐:** "
                     f"`%sms` \n"
                     f"**★ 𝚄𝚙𝚝𝚒𝚖𝚎:** "
                     f"`{uptime}` \n"
-                    f"**★ 𝙼𝚢 𝙽𝚊𝚖𝚎:** `{ALIVE_NAME}`" % (duration)
-                    "═════════════════════\n")
+                    f"**★ 𝙼𝚢 𝙽𝚊𝚖𝚎:** `{ALIVE_NAME}`" % (duration))
 
 @register(outgoing=True, pattern="^.kecepatan$")
 async def speedtst(spd):
