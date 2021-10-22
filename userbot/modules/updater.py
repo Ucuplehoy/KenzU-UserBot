@@ -102,7 +102,10 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`💥KENZU-UBOT💥 Berhasil Di Update`")
+                             "═════════════════════\n"
+                             "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
+                             "═════════════════════\n"
+                             "▪️`Update by` @tripleninee ")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -119,8 +122,12 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**💥KENZU-UBOT💥** `Berhasil Di Update!`')
-    await asyncio.sleep(1)
+    await event.edit(
+                    "═════════════════════\n"
+                    "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
+                    "═════════════════════\n"
+                    "▪️`Update by` @tripleninee ")
+    await asyncio.sleep(5)
     await event.edit('**💥KENZU-UBOT💥** `Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik.`')
