@@ -91,7 +91,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`💥KENZU-UBOT💥 Berhasil DiUpdate,Restart Tunggu Sebentar`")
+            await event.edit(
+                             "═════════════════════\n"
+                             "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
+                             "═════════════════════\n"
+                             "▪️`Update by` @tripleninee ")
             await asyncio.sleep(15)
             await event.delete()
 
