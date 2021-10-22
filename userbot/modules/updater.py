@@ -95,8 +95,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                              "═════════════════════\n"
                              "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
                              "═════════════════════\n"
-                             "▪️`Update by` @tripleninee ")
-            await asyncio.sleep(15)
+                             "▪️`Update by` @triplenineee ")
+            await asyncio.sleep(30)
             await event.delete()
 
         if BOTLOG:
