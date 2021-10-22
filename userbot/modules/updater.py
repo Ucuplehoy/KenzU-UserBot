@@ -192,7 +192,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n💥𝘔𝘢𝘴𝘵𝘦𝘳 𝘡𝘩𝘶💥\n\n𝘕𝘰 𝘶𝘱𝘥𝘢𝘵𝘦𝘴 𝘧𝘰𝘶𝘯𝘥 \n\n𝘧𝘰𝘳 𝘮𝘰𝘳𝘦 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 @tripleneee \n')
+            f'\n💥𝘔𝘢𝘴𝘵𝘦𝘳 𝘡𝘩𝘶💥\n\n𝘕𝘰 𝘶𝘱𝘥𝘢𝘵𝘦𝘴 𝘧𝘰𝘶𝘯𝘥 \n\n𝘧𝘰𝘳 𝘮𝘰𝘳𝘦 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 @triplenineee \n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
