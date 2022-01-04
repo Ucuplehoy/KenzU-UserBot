@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit('`Heroku : Sedang MengUpdate`'
-                         '\nMohon Menggunakan 5-7 Menit'
+                         '\nMohon Menunggu 5-7 Menit'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -92,9 +92,9 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                             "═════════════════════\n"
-                             "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
-                             "═════════════════════\n"
+                             "═══════════ • ══════════\n"
+                             "`Pembaruan telah berhasil` \n"
+                             "═══════════ • ══════════\n"
                              "▪️`Update by` @triplenineee ")
             await asyncio.sleep(30)
             await event.delete()
@@ -102,10 +102,10 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                             "═════════════════════\n"
-                             "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
-                             "═════════════════════\n"
-                             "▪️`Update by` @tripleninee ")
+                             "═══════════ • ══════════\n"
+                             "`Pembaruan telah berhasil` \n"
+                             "═══════════ • ══════════\n"
+                             "▪️`Update by` @triplenineee ")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -123,10 +123,10 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit(
-                    "═════════════════════\n"
-                    "`𝘜𝘱𝘥𝘢𝘵𝘦 𝘩𝘢𝘴 𝘣𝘦𝘦𝘯 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭` \n"
-                    "═════════════════════\n"
-                    "▪️`Update by` @tripleninee ")
+                    "═══════════ • ══════════\n"
+                    "`Pembaruan telah berhasil` \n"
+                    "═══════════ • ══════════\n"
+                    "▪️`Update by` @triplenineee ")
     await asyncio.sleep(5)
     await event.edit('**💥KENZU-UBOT💥** `Di Restart....`')
     await asyncio.sleep(1)
@@ -199,7 +199,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n☠️Warning . . .☠️\n\n Tidak ada pembaruan ditemukan \n\n𝘧𝘰𝘳 𝘮𝘰𝘳𝘦 𝘪𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 @triplenineee \n')
+            f'\n☠️Warning . . .☠️\n\n Tidak ada pembaruan ditemukan \n\nby @triplenineee \n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
