@@ -199,7 +199,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n☠️Warning . . .☠️\n\nTelah menggunakan versi terbaru \n\nby [Kenzu]@triplenineee \n')
+            f'\n☠️Warning . . .☠️\n\nTelah menggunakan versi terbaru \n\nby : @triplenineee[KENZU] \n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
