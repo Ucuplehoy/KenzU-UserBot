@@ -228,7 +228,12 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Melakukan Banned!`")
+    await bon.edit("`Memeriksa pengguna` ✅")
+    await sleep(5)
+    await bon.edit("`Menghapus akses pengguna` ✅")
+    await sleep(5)
+    await bon.edit("`Mengeluarkan pengguna` ✅")
+    await sleep(5)
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
@@ -277,7 +282,12 @@ async def nothanos(unbon):
         return await unbon.edit(NO_ADMIN)
 
     # If everything goes well...
-    await unbon.edit("`Sedang Melakukan Unban...`")
+    await unbon.edit("`Memeriksa pengguna` ✅")
+    await sleep(5)
+    await unbon.edit("`Memberi akses pengguna` ✅")
+    await sleep(5)
+    await unbon.edit("`Membebaskan ban pengguna` ✅")
+    await sleep(5)
 
     user = await get_user_from_event(unbon)
     user = user[0]
