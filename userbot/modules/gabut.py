@@ -22,7 +22,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Salam Dulu Biar Sopan...`")
     sleep(2)
-    await typew.edit("`السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ`")
+    await typew.edit("`assalamualaikum sayang`")
 # Salam
 
 
@@ -38,7 +38,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern="^.kenalin(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("☑️ `putra wibu`")
+    await typew.edit("☑️ `ucup di sini`")
     sleep(2)
     await typew.edit("✅ `putra wibu`")
     sleep(1)
